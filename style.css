@@ -6,10 +6,13 @@ body {
     background-color: grey;
 }
 
+a {
+    color: black;
+}
+
 #title {
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 40px;
 }
 
 #calculator_container {
@@ -17,7 +20,8 @@ body {
     justify-content: center;
     align-content: center;
     align-items: center;
-    
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 #calculator {
@@ -28,32 +32,30 @@ body {
 }
 
 #buttons_grid {
-/*     width: 220px;
-    height: 280px; */
     display: grid;
-    padding: 5px;
+    padding: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    background-color: rgb(34, 34, 34);
-    border-radius: 10px;  
+    background-color: rgb(0, 0, 0);
+    /* border-radius: 10px; */  
     gap: 8px;
     text-align: center;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 18px;
     margin: auto;
 }
 
 #display {
     height: 80px;
     padding: 20px;
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(0, 0, 0);
     color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-content: baseline;
     font-size: 40px;
-    border-radius: 10px;  
+    /* border-radius: 10px; */  
 }
 
 .top_buttons {
@@ -65,13 +67,23 @@ body {
     color: black;
 }
 
+.top_buttons:hover {
+    background-color: rgb(129, 129, 129);
+    cursor: pointer;
+}
+
 .right_buttons {
     display: flex;
     width: 50px;
     height: 50px;
-    background-color: rgb(245, 171, 35);
+    background-color: rgb(255, 160, 8);
     border-radius: 50px;
     color: white;
+}
+
+.right_buttons:hover {
+    background-color: rgb(184, 120, 18);
+    cursor: pointer;
 }
 
 .number_buttons {
@@ -81,6 +93,11 @@ body {
     background-color: rgb(59, 59, 59);
     border-radius: 50px;
     color: white;
+}
+
+.number_buttons:hover {
+    background-color: rgb(92, 92, 92);
+    cursor: pointer;
 }
 
 #button_0 {
@@ -96,4 +113,9 @@ body {
 
 .display_content {
     margin-top: 40px;
+}
+
+#footer {
+    font-size: 10px;
+    text-align: center;
 }
